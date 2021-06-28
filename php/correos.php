@@ -1,14 +1,19 @@
 <?php 
-    $destinatario = 'jj-0808@hotmail.com';
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    if(isset($_POST['send'])){
+        if(!empty($_POST['name']) && !empty($_POST['message']) && !empty($_POST['email'])){
+            $name = $_POST['name'];
+            $message = $_POST['message'];
+            $email = $_POST['email'];
 
-    $header = "Enviado desde GratoPeru";
-    $mensajeCompleto = $mensaje . "\nAtentamente: " . $name;
-
-    mail($destinatario, $mensaje, $header);
-    echo "<scrip>alert('Correo enviado :)')</script>";
-    echo "<scrip>setTimeout(\"location.href='../html/cotizacion.html'\",1000)</script>";
+            $header = "From: noreply@example.com" . "\r\n";
+            $header = "Reply-To: noreply@example.com" . "\r\n";
+            $header = "X-Mailer: PHP/". phpversion();
+            
+            $mail = @mail($email,$message,$header);
+            if($mail){
+                echo "<h4>Enviado exitosamente :)</h4>"
+            }
+        }
+    }
 
 ?>
