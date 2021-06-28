@@ -11,7 +11,7 @@
             
             $mail = @mail($email,$message,$header);
             if($mail){
-                echo "<h4>Enviado exitosamente :)</h4>"
+                echo "<h4>Enviado exitosamente :)</h4>";
             }
         }
     }
