@@ -25,7 +25,7 @@ function toggleMenu(){
 
 function disableBorderRight(){
   var viewportWidth = $(window).width();
-  const bar = $(".bar-decoration")
+  const bar = $(".bar-decoration");
   if(viewportWidth <= 600){
     console.log("uwu");
     bar.removeClass("w3-border-right");
