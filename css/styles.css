@@ -57,6 +57,11 @@ padding: 8px 12px;
 border-radius: 3px;
 }
 
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  transition: 0.5s;
+}
+
 
 /* FOOTER */
 .footer-link{
@@ -148,10 +153,10 @@ body {
     line-height: 70px;
 }
 
-.nav-menu-link:hover,
-.nav-menu-link_active{
+.nav-menu-link:hover{
     background: none;
-    color: #FED049;
+    color: #EBA83A;
+    font-size: 20px;
 }
 
 
