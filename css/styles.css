@@ -142,10 +142,12 @@ body {
     line-height: 70px;
 }
 
-.nav-menu-link:hover{
+.nav-menu-link:hover,
+.nav-menu-link_active{
     background: none;
-    color: yellow;
+    color: #FED049;
 }
+
 
 .nav-toggle {
     display: block;
