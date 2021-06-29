@@ -23,29 +23,19 @@ function toggleMenu(){
   )
 }
 
+function disableBorderRight(){
+  var viewportWidth = $(window).width();
+  const bar = $(".bar-decoration")
+  if(viewportWidth <= 600){
+    console.log("uwu");
+    bar.removeClass("w3-border-right");
+  }
+}
+
 //Esto es como el main de C++ 
 $(document).ready(function(){
   toggleMenu();
+  disableBorderRight();
 });
 
-//Formulario funcional
-const $form = document.querySelector('#form');
-
-$form.addEventListener('submit', handleSubmit);
-
-async function handleSubmit(event){
-  event.preventDefault();
-  const form = new FormData(this);
-  const response = await fetch(this.action, {
-    method: this.method,
-    body: form,
-    headers: {
-      'Accept': 'application/json' 
-    }
-  })
-  if(response.ok){
-    this.reset()
-    alert('Enviado exitosamente :)');
-  }  
-}
 
