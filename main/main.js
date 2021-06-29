@@ -30,9 +30,6 @@ function handleMobile(){
     console.log("UwU");
     $(".bar-decoration").removeClass("w3-border-right");
     $(".remove-icon").css("display","none");
-    //$(".remove-icon").removeClass("fa");
-    //$(".remove-icon").removeClass("fa");
-   // $(".remove-icon").addClass("uwuwu");
   }
 }
 
