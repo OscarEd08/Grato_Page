@@ -57,11 +57,17 @@ padding: 8px 12px;
 border-radius: 3px;
 }
 
+
+/* FOOTER */
 .footer-link{
     text-decoration: none;
 }
 .footer-link:hover{
     color: #ca8252;
+}
+
+.insta-hover:hover{
+    color: #DC7296; 
 }
 
 
