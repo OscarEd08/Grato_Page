@@ -17,6 +17,7 @@ top: 0;
 left: 0;
 }
 
+/*MENU*/
 .nav {
 display: flex;
 justify-content: space-between;
@@ -98,12 +99,63 @@ display: none;
     height: 5px; 
 }
 
-.aspiradora{
-    height: 300px;
-    width: 1200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.home-image{
+    height: 400px;
+    width: 100%;
+   
 }
+
+.box-home-image{
+    padding: 30px;
+}
+
+/*MOBILE-HOME-IMAGE*/
+@media (max-width: 1190px){
+.home-image{
+    height: 300px;
+}
+}
+
+@media (max-width: 900px){
+.home-image{
+    height: 200px;
+}
+}
+
+@media (max-width: 600px){
+.home-image{
+    height: 300px;   
+}
+.box-home-imge{
+    padding: 10px 20px 10px 20px;
+}
+}
+/*END MOBILE-HOME-IMAGE*/
+
+.slides{
+    display: none;
+}
+
+.fondo-blur{
+    width: 100%;    
+    filter: blur(6px);
+}
+
+.no-blur{
+    width: 85%;     
+}
+
+/*MOBILE-BACKGROUND-HOME*/
+@media (max-width: 1024px){
+.fondo-blur{
+    opacity: 0;
+}
+
+.no-blur{
+    width: 100%;    
+}
+}
+/*END MOBILE-BACKGROUND-HOME*/
 
 .slides{
     display: none;
@@ -139,7 +191,73 @@ display: none;
     background-color: #616063;
 }
 
-/*ACABADOS*/
+/*LIMPIEZA*/
+.aspiradora{
+    height: 300px;
+    width: 100%;
+   
+}
+
+.box-aspiradora{
+    padding: 30px 40px 30px 0px;
+}
+
+/*MOBILE-ASPIRADORA*/
+@media (max-width: 900px){
+.aspiradora{
+    height: 200px;
+}
+}
+
+@media (max-width: 600px){
+.aspiradora{
+    height: 300px;   
+}
+.box-aspiradora{
+    padding: 25px;
+}
+}
+/*END MOBILE-ASPIRADORA*/
+
+/*MALLAS*/
+.mallas{
+    height: 350px;
+    width: 100%;
+   
+}
+
+.box-mallas{
+    padding: 30px;
+}
+
+/*MOBILE-ASPIRADORA*/
+@media (max-width: 1380px){
+.mallas{
+    height: 300px;
+}
+}
+
+@media (max-width: 1080px){
+.mallas{
+    height: 250px;
+}
+}
+
+@media (max-width: 770px){
+    .mallas{
+        height: 180px;
+    }
+    }
+
+@media (max-width: 600px){
+.mallas{
+    height: 250px;   
+}
+.box-mallas{
+    padding: 25px;
+}
+}
+/*END MOBILE-ASPIRADORA*/
 
 
 /* MOBILE  MENU*/
@@ -198,7 +316,6 @@ body {
     outline: none;
 }
 }
-
 /*END MOBILE MENU */
 
 
