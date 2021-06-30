@@ -72,7 +72,9 @@ border-radius: 3px;
 }
 
 .insta-hover:hover{
-    color: #DC7296; 
+    /*color: #DC7296; */
+    background-image:  linear-gradient(to right, #405DE6, #C13584);
+    border-radius: 100%;
 }
 
 
@@ -141,7 +143,7 @@ display: none;
 /*ACABADOS*/
 
 
-/* MOBILE */
+/* MOBILE  MENU*/
 @media (min-width: 0px){
 body {
     padding-top: initial;
@@ -197,6 +199,17 @@ body {
     outline: none;
 }
 }
+
+/*END MOBILE MENU */
+
+/*MOBILE NOSOTROS */
+@media screen and (max-width: 600px){
+    .nosotros-text{
+        font-size: 12px;
+    }
+   
+}
+/*END MOBILE NOSOTROS */
 
 
 
