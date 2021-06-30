@@ -57,8 +57,7 @@ padding: 8px 12px;
 border-radius: 3px;
 }
 
-.nav-menu-link:hover,
-.nav-menu-link_active {
+.nav-menu-link:hover{
   transition: 0.5s;
 }
 
