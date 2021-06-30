@@ -14,7 +14,7 @@ async function handleSubmit(event){
     }
   })
   if(response.ok){
-    this.reset()
+    this.reset();
     alert('Enviado exitosamente :)');
   }  
 }

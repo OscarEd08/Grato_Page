@@ -89,11 +89,12 @@ cursor: pointer;
 display: none;
 }
 
-/*INICIO*/
+/*HOME*/
 #black-logo{
     max-height: 100%;
-    margin-top: -75px;  
-    height: 5px;  
+    margin-top: 20px;  
+    padding-bottom: 40px;
+    height: 5px; 
 }
 
 .aspiradora{
@@ -101,6 +102,29 @@ display: none;
     width: 1200px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.slides{
+    display: none;
+}
+
+.fondo-blur{
+    width: 100%;    
+    filter: blur(6px);
+}
+
+.no-blur{
+    width: 85%;     
+}
+
+@media (max-width: 1024px){
+.fondo-blur{
+    opacity: 0;
+}
+
+.no-blur{
+    width: 100%;    
+}
 }
 
 /*NOSOTROS*/
