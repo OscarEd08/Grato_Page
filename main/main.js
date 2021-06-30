@@ -23,19 +23,22 @@ function toggleMenu(){
   )
 }
 
-function disableBorderRight(){
-  var viewportWidth = $(window).width();
-  const bar = $(".bar-decoration");
-  if(viewportWidth <= 600){
-    console.log("uwu");
-    bar.removeClass("w3-border-right");
+
+
+function handleMobile(){
+  if($(window).width() <= 600){
+    console.log("UwU");
+    $(".bar-decoration").removeClass("w3-border-right");
+    $(".remove-icon").css("display","none");
+    $(".about-us").css("padding-right","0px");
+    $(".about-us").css("padding-left","0px");
   }
 }
 
 //Esto es como el main de C++ 
 $(document).ready(function(){
   toggleMenu();
-  disableBorderRight();
+  handleMobile();
 });
 
 

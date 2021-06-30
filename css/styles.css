@@ -57,11 +57,24 @@ padding: 8px 12px;
 border-radius: 3px;
 }
 
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  transition: 0.5s;
+}
+
+
+/* FOOTER */
 .footer-link{
     text-decoration: none;
 }
 .footer-link:hover{
     color: #ca8252;
+}
+
+.insta-hover:hover{
+    /*color: #DC7296; */
+    background-image:  linear-gradient(to right, #405DE6, #C13584);
+    border-radius: 100%;
 }
 
 
@@ -78,11 +91,12 @@ cursor: pointer;
 display: none;
 }
 
-/*INICIO*/
+/*HOME*/
 #black-logo{
     max-height: 100%;
-    margin-top: -75px;  
-    height: 5px;  
+    margin-top: 20px;  
+    padding-bottom: 40px;
+    height: 5px; 
 }
 
 .aspiradora{
@@ -90,6 +104,29 @@ display: none;
     width: 1200px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.slides{
+    display: none;
+}
+
+.fondo-blur{
+    width: 100%;    
+    filter: blur(6px);
+}
+
+.no-blur{
+    width: 85%;     
+}
+
+@media (max-width: 1024px){
+.fondo-blur{
+    opacity: 0;
+}
+
+.no-blur{
+    width: 100%;    
+}
 }
 
 /*NOSOTROS*/
@@ -106,7 +143,7 @@ display: none;
 /*ACABADOS*/
 
 
-/* MOBILE */
+/* MOBILE  MENU*/
 @media (min-width: 0px){
 body {
     padding-top: initial;
@@ -142,10 +179,10 @@ body {
     line-height: 70px;
 }
 
-.nav-menu-link:hover,
-.nav-menu-link_active{
+.nav-menu-link:hover{
     background: none;
-    color: #FED049;
+    color: #EBA83A;
+    font-size: 20px;
 }
 
 
@@ -163,5 +200,6 @@ body {
 }
 }
 
+/*END MOBILE MENU */
 
 

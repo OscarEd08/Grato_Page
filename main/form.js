@@ -14,7 +14,7 @@ async function handleSubmit(event){
     }
   })
   if(response.ok){
-    this.reset()
-    alert('Enviado exitosamente :)');
+    this.reset();
+    alert('Su mensaje ha sido enviado');
   }  
 }

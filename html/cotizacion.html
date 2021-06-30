@@ -9,6 +9,7 @@
         <script src="https://kit.fontawesome.com/e643b2ecbc.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script defer type="text/javascript" src="../main/main.js"></script>
+        <script defer type="text/javascript" src="../main/form.js"></script>
     </head>
     <body>
         <!--MENU DE NAVEGACION-->
@@ -45,38 +46,60 @@
         <!--INICIO DE PAGINA-->
         <!--SECCION DE CONTACTO -->
         <div class="w3-container w3-content w3-padding-32 w3-animate-top w3-mobile" style="max-width:1000px; margin-top: 100px;" id="contact">
-            <h2 class="w3-wide w3-center w3-dark-gray w3-opacity w3-card">CONTÁCTANOS</h2>
+          <div class="w3-row w3-mobile">
+            <h2 class="w3-wide w3-center w3-dark-gray w3-opacity w3-card w3-round-large" style="margin-bottom: 20px;">CONTÁCTANOS</h2>
             <p class="w3-opacity w3-center"><i>Permítanos ponernos en contacto con usted</i></p>
-            <div class="w3-row w3-padding-32">
+          </div>
             <div class="w3-col m6 w3-large w3-margin-bottom w3-mobile" style="margin-top: 35px;">
-                <i class="fa fa-map-marker w3-mobile" style="width:30px; margin-bottom: 20px;"></i> GRATO Oficina: Av. Arequipa 1492<br>
-                <i class="fa fa-whatsapp w3-mobile" style="width:30px; margin-bottom: 20px;"></i> Phone: +51 956 589 500<br>
-                <i class="fa fa-envelope w3-mobile" style="width:30px; margin-bottom: 20px;"> </i> Email: servicios@gratoperu.com<br>
+              <div class="w3-row w3-mobile">
+                <i class="fa fa-map-marker w3-mobile remove-icon" style="width:30px; margin-bottom: 20px;"></i>
+                <span class="w3-center w3-mobile">
+                  GRATO Oficina: Av. Arequipa 1492<br>
+                </span>
+              </div>
+              <div class="w3-row w3-mobile">
+                <i class="fa fa-whatsapp w3-mobile remove-icon" style="width:30px; margin-bottom: 20px;"></i>
+                <span class="w3-center w3-mobile">
+                  Phone: +51 956 589 500<br>
+                </span> 
+              </div>
+              <div class="w3-row w3-mobile">
+                <i class="fa fa-envelope w3-mobile remove-icon" style="width:30px; margin-bottom: 20px;"></i>
+                <span class="w3-center w3-mobile">
+                  Email: servicios@gratoperu.com<br> 
+                </span>  
+              </div>
             </div>
-            <div class="w3-col m6">                
+
+            <!--INICIO FORMULARIO-->
+            <div class="w3-col m6" style="margin-top: 35px;">                
                 <form id="form" action="https://formspree.io/f/mbjqkoqz" method="POST">
                 <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
                     <div class="w3-half">
-                    <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="name" >
+                    <input class="w3-input w3-border w3-round-large" type="text" placeholder="Nombre" required name="name" >
                     </div>
                     <div class="w3-half">
-                    <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+                    <input class="w3-input w3-border w3-round-large" type="text" placeholder="Email" required name="email">
                     </div>
                 </div>
-                <textarea class="w3-input w3-border" type="text" placeholder="Mensaje" required name="message" style ="padding: 15px 10px 80px 10px; resize: none;"></textarea>
-                <button class="w3-button w3-black w3-section w3-right" type="submit" name="send">Enviar</button>              
+                <textarea class="w3-input w3-border w3-round-large" type="text" placeholder="Mensaje" required name="message" style ="padding: 15px 10px 80px 10px; resize: none;"></textarea>
+                <button class="w3-button w3-black w3-section w3-right w3-round-large" type="submit" name="send">Enviar</button>              
                 </form>                
             </div>
-            </div>
+            <!--FIN FORMULARIO-->
         </div>
         <!--SECCCION DE UBICACION-->
         <div class="w3-container w3-content w3-padding-16 w3-center w3-mobile w3-animate-bottom" style="max-width: 1000px;margin-top: -50px; margin-bottom: 30px;">
-            <h2 class="w3-wide w3-center w3-dark-gray w3-opacity  w3-card " style="margin-bottom: 30px;">UBÍCANOS</h2>
+          <div class="w3-row w3-mobile">
+            <h2 class="w3-wide w3-center w3-dark-gray w3-opacity w3-card w3-round-large" style="margin-bottom: 30px;">UBÍCANOS</h2>
+          </div>
+          <div class="w3-row w3-mobile">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.47584071614!2d-77.037465
             6846158!3d-12.079542345801345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f365e435
             99%3A0x7317bdc35dfa9850!2sAv.%20Arequipa%201492%2C%20Cercado%20de%20Lima%2015046!5e0!3m2!1ses-41
-            9!2spe!4v1624896980107!5m2!1ses-419!2spe" width="970" height="500" style="border:0;" 
+            9!2spe!4v1624896980107!5m2!1ses-419!2spe" width="100%" height="300px" style="border:0;" 
             allowfullscreen="" loading="lazy" class="w3-mobile"></iframe>
+          </div>   
         </div>
 
         <!--INICIO DEL FOOTER-->
@@ -85,9 +108,9 @@
               <div class="w3-col s4 w3-center w3-mobile">
                   <h3 style="color: #FFBD69;">Síguenos</h3>
                   <a href="https://www.facebook.com/GratoPeru/" target="blank" class="w3-xxlarge w3-padding w3-hover-text-blue"><i class="fab fa-facebook"></i></a>                  
-                  <a href="https://www.instagram.com/gratoperu/" target="blank" class="w3-xxlarge w3-padding w3-hover-text-amber"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/gratoperu/" target="blank" class="w3-xxlarge w3-padding insta-hover"><i class="fab fa-instagram"></i></a>
                   <a href="https://api.whatsapp.com/send?phone=+51956589500" target="blank" class="w3-xxlarge w3-padding w3-hover-text-green"><i class="fab fa-whatsapp"></i></a>
-                  <h5>servicios@gratoperu.com | <a href="www.gratoperu.com" class = "footer-link">www.gratoperu.com</a></h5>
+                  <h5> <a href="/html/cotizacion.html" class = "footer-link">servicios@gratoperu.com</a> | <a href="../index.html" class = "footer-link">www.gratoperu.com</a></h5>
               </div>
               <div class="w3-col s4 w3-center w3-mobile">
                   <h3 class="w3-center" style="color: #FFBD69; padding-bottom: 5px;">Ubícanos</h3>
