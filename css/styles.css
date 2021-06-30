@@ -202,14 +202,4 @@ body {
 
 /*END MOBILE MENU */
 
-/*MOBILE NOSOTROS */
-@media screen and (max-width: 600px){
-    .nosotros-text{
-        font-size: 12px;
-    }
-   
-}
-/*END MOBILE NOSOTROS */
-
-
 
