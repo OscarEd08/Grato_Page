@@ -30,6 +30,8 @@ function handleMobile(){
     console.log("UwU");
     $(".bar-decoration").removeClass("w3-border-right");
     $(".remove-icon").css("display","none");
+    $(".about-us").css("padding-right","0px");
+    $(".about-us").css("padding-left","0px");
   }
 }
 
