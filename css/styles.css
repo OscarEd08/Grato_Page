@@ -249,6 +249,10 @@ h2{
 .caja-frase{
     animation: opacity 1s forwards;
 }
+
+.loader-content{
+    padding-bottom: 100px;
+}
 @keyframes opacity { 
     0% {
       opacity: 0;
