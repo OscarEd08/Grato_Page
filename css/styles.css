@@ -239,9 +239,7 @@ h2{
 .frase-home{
     font-size: 12px!important;  
 }
-.portada-image{
-    height: 270px;
-}
+
 .inicio-responsive{
     margin-top: 100px!important;
     margin-bottom: 35px!important;
@@ -276,6 +274,47 @@ h2{
 .no-blur{
     width: 85%;     
 }
+/*MOBILE-PORTADA-IMAGE*/
+@media (max-width: 600px){
+    .portada-image{
+        height: 400px;
+    }
+    .texto-medio{
+        margin-top: 20px!important;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px){
+    .portada-image{
+        height: 340px;
+    }
+    .texto-medio{
+        margin-top: 10px!important;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 430px){
+    .portada-image{
+        height: 340px;
+    }
+    .texto-medio{
+        margin-top: 20px!important;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 380px){
+    .portada-image{
+        height: 270px;
+        
+    }
+    .texto-medio{
+        margin-top: 0!important;
+    }
+}
+
 
 /*MOBILE-BACKGROUND-HOME*/
 @media (max-width: 1024px){
