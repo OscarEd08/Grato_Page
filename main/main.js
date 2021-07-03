@@ -34,6 +34,7 @@ function handleMobile(){
     $(".frase-home").removeClass("w3-xlarge");       
     $(".remove-icon").css("display","none");
     $(".remove-ubicacion").css("display","none");
+    $(".direccion-nav-bottom").css("display","none");
     $(".about-us").css("padding-right","0px");
     $(".about-us").css("padding-left","0px");
     
