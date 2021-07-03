@@ -460,6 +460,12 @@ h2{
 .box-aspiradora{
     padding: 20px;
 }
+.subtitulo{
+    font-size: 21px;
+}
+.oracion-limpieza{
+    font-size: larger;
+}
 }
 /*END MOBILE-ASPIRADORA*/
 
