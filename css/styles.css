@@ -112,13 +112,57 @@ border-radius: 3px;
   transition: 0.5s;
 }
 
+/*NAV-MENU-BOTTOM*/
+.box-nav-bottom{
+    color: #F1F1F1!important;
+    background-color: #161616!important;
+}
+
+
+/*MOBILE-NAV-MENU-BOTTOM*/
+@media (max-width: 850px){
+    .box-nav-bottom{
+        font-size: 14px!important;
+    }
+    .word-nav-bottom{
+        font-size: 18px!important;
+    }
+    .social-logos{
+        font-size: 24px!important;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .box-nav-bottom{
+        font-size: 13px!important;
+    }
+    .word-nav-bottom{
+        font-size: 17px!important;
+    }
+    .social-logos{
+        font-size: 25px!important;
+    }
+}
+@media (max-width: 620px) {    
+    .social-logos{
+        font-size: 21px!important;
+    }
+}
+/*END-MOBILE-NAV-MENU-BOTTOM*/
+
+
 
 /* FOOTER */
+.box-footer{
+    color: #F1F1F1!important;
+    background-color: #161616!important;
+}
 .footer-link{
     text-decoration: none;
 }
 .footer-link:hover{
-    color: #ca8252;
+    color: #ca8252!important;
 }
 
 .insta-hover:hover{
@@ -126,6 +170,24 @@ border-radius: 3px;
     background-image:  linear-gradient(to right, #405DE6, #C13584);
     border-radius: 25%;
 }
+
+/*MOBILE-FOOTER*/
+@media (max-width: 450px) {
+    .box-footer{
+        font-size: 13px!important;
+    }
+    .word-footer{
+        font-size: 17px!important;
+    }
+    .social-logos{
+        font-size: 25px!important;
+    }
+    .image-pago{
+        width: 42%!important;
+    }
+}
+/*END-MOBILE-FOOTER*/
+
 
 
 /* TOGGLE */
@@ -226,7 +288,7 @@ display: none;
 }
 
 .nav-menu_visible{
-    margin-top: 9px!important;
+    margin-top: 8px!important;
 }
 .titulos{
     padding-top: 0px;
@@ -454,7 +516,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    background-color: black;
+    background-color: #161616;
     position: fixed;
     top: 60px;
     width: 100%;
@@ -511,7 +573,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    background-color: black;
+    background-color: #161616;
     position: fixed;
     top: 60px;
     width: 100%;

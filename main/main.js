@@ -24,18 +24,26 @@ function toggleMenu(){
 }
 
 
-
+//Remove some w3.css classes (width<=600px)
 function handleMobile(){
   if($(window).width() <= 600){
     $(".bar-decoration").removeClass("w3-border-right");
     $(".bar-decoration").removeClass("w3-section");
     $(".bar-container").removeClass("w3-padding-16");
     $(".frase-home").removeClass("w3-animate-right");
-    $(".frase-home").removeClass("w3-xlarge");
+    $(".frase-home").removeClass("w3-xlarge");       
     $(".remove-icon").css("display","none");
+    $(".remove-ubicacion").css("display","none");
     $(".about-us").css("padding-right","0px");
     $(".about-us").css("padding-left","0px");
     
+  }
+}
+
+//Remove some w3.css classes (width<=450px)
+function handleMobile2(){
+  if($(window).width() <= 450){
+    $(".box-footer").removeClass("w3-xxlarge");   
   }
 }
 
