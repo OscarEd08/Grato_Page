@@ -229,6 +229,10 @@ display: none;
     padding: 30px;
 }
 
+.bar-border{   
+    border-right: 2px solid #D8D3CD;
+}
+
 /*MOBILE-HOME-IMAGE*/
 @media (max-width: 1400px){
 .home-image{
@@ -271,10 +275,7 @@ display: none;
 .box-home-image{
     padding: 20px;
 }
-.bar-decoration{
-    margin-top: 8px!important;
-    margin-bottom: 8px!important;
-}
+
 .bar-container{
     margin-top: 32px;
 }
@@ -373,7 +374,7 @@ h2{
         height: 340px;
     }
     .texto-medio{
-        margin-top: 20px!important;
+        margin-top: 28px!important;
         font-size: 22px;
     }
 }
@@ -384,7 +385,7 @@ h2{
         
     }
     .texto-medio{
-        margin-top: 0!important;
+        margin-top: 12px!important;
     }
 }
 
