@@ -9,7 +9,7 @@
 
 var container = document.getElementById('preloader');
 setTimeout(function(){
-    container.classList.add('close');
+    
     $('#preloader').delay(500).fadeOut('slow');
 }, 1600);
 
