@@ -160,6 +160,36 @@ border-radius: 3px;
         padding: 10px 0px!important;
     }
 }
+
+@media (max-height:730px){
+    .box-nav-bottom{
+        font-size: 13px!important;
+    }
+    .word-nav-bottom{
+        font-size: 17px!important;
+    }
+    .social-logos{
+        font-size: 25px!important;
+    }
+    .box-display-bottom{
+        padding-bottom: 0px!important;
+    }
+    .nav-menu-item{
+        font-size: 12px;
+        margin: -5px 0;
+    }
+    .nav-menu-link:hover{
+        background: none;
+        color: #EBA83A;
+        font-size: 14px!important;
+    }
+}
+
+@media (max-height:590px){
+    .box-display-bottom{
+        display: none;
+    }
+}
 /*END-MOBILE-NAV-MENU-BOTTOM*/
 
 
